@@ -3,6 +3,16 @@ Follow this documentation to set up a Kubernetes cluster on __CentOS 7__ Virtual
 
 This documentation guides you in setting up a cluster with one master node and two worker nodes.
 
+Master: t2.medium
+Worker Nodes: t2.micro
+
+# Ports require for kubernetes master
+6443
+32750
+10250
+4443
+443
+8080
 
 ## On both Kmaster and Kworker
 Perform all the commands as root user unless otherwise specified
