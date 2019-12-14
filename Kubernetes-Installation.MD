@@ -14,7 +14,7 @@ Worker Nodes: t2.micro
 443
 8080
 
-## On both Kmaster and Kworker
+## On both Kmaster and Kworker Nodes
 Perform all the commands as root user unless otherwise specified
 
 ##### Install, enable and start docker service
