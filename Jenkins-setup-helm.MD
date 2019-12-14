@@ -31,7 +31,7 @@ kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceac
 ```sh
 helm init --service-account tiller
 ```
-## To verify that Tiller is running, list the pods in thekube-system namespace:
+## To verify that Tiller is running, list the pods in the kube-system namespace:
 ```sh
 kubectl get pods --namespace kube-system
 ```
