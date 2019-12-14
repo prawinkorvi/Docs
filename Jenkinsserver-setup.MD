@@ -1,4 +1,4 @@
-### Jenkins server setup to Deploy on Kubernetes by using helm
+# Jenkins server setup to Deploy on Kubernetes by using helm
 
 ## Install Maven
 ```sh
