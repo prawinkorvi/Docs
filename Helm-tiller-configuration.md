@@ -6,12 +6,12 @@ chmod 700 get_helm.sh
 ```
 # Installing Tiller
 
-## Create tiller Serviveaccount:
+## Create tiller Serviveaccount in Kubernetes Master
 
 ```sh
 kubectl -n kube-system create serviceaccount tiller
 ```
-## Bind the tiller serviceaccount to the cluster-admin role:
+## Bind the tiller serviceaccount to the cluster-admin role IN Kubernetes Master:
 
 ```sh
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
