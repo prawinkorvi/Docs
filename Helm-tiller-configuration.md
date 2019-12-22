@@ -6,18 +6,18 @@ chmod 700 get_helm.sh
 ```
 # Installing Tiller
 
-## Create tiller Serviceaccount in Kubernetes Master
+## Create a tiller Serviceaccount in Kubernetes Master
 
 ```sh
 kubectl -n kube-system create serviceaccount tiller
 ```
-## Bind the tiller serviceaccount to the cluster-admin role IN Kubernetes Master:
+## Bind the tiller serviceaccount to the cluster-admin role in Kubernetes Master:
 
 ```sh
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 ```
 
-## Copy config file from Kubernetes master to Jenkins user's home directory in Jenkins server
+## Copy admin.conf file from Kubernetes master to Jenkins user's home directory in Jenkins server
 
 ```sh
 mkdir /var/lib/jenkins/.kube
