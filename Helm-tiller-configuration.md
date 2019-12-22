@@ -1,4 +1,12 @@
 # Installing Helm on Jenkins server
+
+## Add Jenkins user into sudoers file to get sudo access
+
+```sh
+vi /etc/sudoers
+jenkins ALL=(ALL) NOPASSWD: ALL
+```
+
 ```sh
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 > get_helm.sh
 chmod 700 get_helm.sh
