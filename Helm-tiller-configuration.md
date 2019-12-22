@@ -6,7 +6,7 @@ chmod 700 get_helm.sh
 ```
 # Installing Tiller
 
-## Create tiller Serviveaccount in Kubernetes Master
+## Create tiller Serviceaccount in Kubernetes Master
 
 ```sh
 kubectl -n kube-system create serviceaccount tiller
