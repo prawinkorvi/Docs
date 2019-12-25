@@ -1,5 +1,9 @@
 # Installing Helm on Jenkins server
 
+## Enable 10250 on Master and Worker Nodes for helm communication
+```sh
+port: 10250
+```
 ## Add Jenkins user into sudoers file to get sudo access
 
 ```sh
