@@ -14,7 +14,7 @@ Worker Nodes: t2.micro
 4443
 443
 8080
-179
+179 --> Should be allowed for Master and Worker nodes. 
 ```
 
 ## On both Kmaster and Kworker Nodes
