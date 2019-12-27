@@ -12,16 +12,20 @@
   
           resources:
           limits:
-            cpu: '1'
-            memory: 1Gi
+            cpu: "0.5"
+            memory: "500Mi"
           requests:
-            cpu: '1'
-            memory: 1Gi
+            cpu: "0.5"
+            memory: "500Mi"
   ```
-## Install siege package inside the Application Pod
+## Install siege package on K8 Master
 ```sh
-apt-get update
-apt-get install siege
+yum -y install epel-release
+yum -y install siege
 ```
-
-siege -q -c 5 -t 2m http://ip:port
+```sh
+siege -q -c 2 -t 2m http://ip:port
+q = quiet mode
+c = concurrent
+2m = time period
+```
