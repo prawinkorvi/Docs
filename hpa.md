@@ -2,13 +2,6 @@
 
 ## Modify deployment.yaml with Resource limits
 ```sh
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-    maxSurge: 0
-    maxUnavailable: 1
-  minReadySeconds: 5
-  revisionHistoryLimit: 10
   
           resources:
           limits:
