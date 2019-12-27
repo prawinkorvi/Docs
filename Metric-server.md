@@ -4,9 +4,9 @@
 ```sh
 It collects metrics like CPU or memory consumption for containers or nodes, from the Summary API, exposed by Kubelet on each node.
 ```
-## Clone Metric-server helm chart 
+## Clone Metric-server helm chart on K8 Master
 ```sh
-https://github.com/prawinkorvi/metric-server.git
+git clone https://github.com/prawinkorvi/metric-server.git
 ```
 
 ## Create Metric Server
