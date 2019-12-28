@@ -5,10 +5,10 @@
   
           resources:
           limits:
-            cpu: "0.5"
+            cpu: '1'
             memory: "500Mi"
           requests:
-            cpu: "0.5"
+            cpu: '1'
             memory: "500Mi"
   ```
 ## hpa.yaml file in helm chart
@@ -24,7 +24,7 @@ spec:
     apiVersion: extensions/v1beta1
     kind: Deployment
     name: petclinic-deployment
-  targetCPUUtilizationPercentage: 20
+  targetCPUUtilizationPercentage: 50
   ```
 ## Install siege package on K8 Master
 
