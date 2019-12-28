@@ -5,10 +5,10 @@
           resources:
           limits:
             cpu: '1'
-            memory: "500Mi"
+            memory: '1Gi'
           requests:
             cpu: '1'
-            memory: "500Mi"
+            memory: '1Gi'
 ```
 
  ## memory-hpa.yaml in Application Helm chart
@@ -38,5 +38,5 @@ spec:
  ```
 ## Execute stress command to increase memory utilization on pod
 ```sh
-stress --vm 1 --vm-bytes 100M  
+stress --vm 1 --vm-bytes 500M  
 ```
