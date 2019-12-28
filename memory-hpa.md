@@ -35,7 +35,7 @@ spec:
  ```sh
  apt-get update
  apt-get install stress
- 
+ ```
 ## Execute stress command to increase memory utilization on pod
 ```sh
 stress --vm 1 --vm-bytes 100M  
