@@ -82,7 +82,7 @@ systemctl start kubelet
 ## On kmaster
 ##### Initialize Kubernetes Cluster
 ```sh
-kubeadm init --apiserver-advertise-address=172.31.88.163 --pod-network-cidr=192.168.0.0/16
+kubeadm init --apiserver-advertise-address=<MasterServerIP> --pod-network-cidr=192.168.0.0/16
 ```
 ##### Copy kube config
 To be able to use kubectl command to connect and interact with the cluster, the user needs kube config file.
