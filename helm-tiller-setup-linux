@@ -1,0 +1,25 @@
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 > get_helm.sh
+chmod 700 get_helm.sh
+./get_helm.sh -v v2.14.1
+
+
+Execute below commands in k8 cluster
+kubectl -n kube-system create serviceaccount tiller
+
+kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+
+
+
+mkdir /home/user/.kube
+Manually copy /etc/kubernetes/admin.conf file to /home/user/.kube/config file
+
+
+kubectl get deployment -n kube-system | grep -i tiller
+
+kubectl get pods -n kube-system | grep -i tiller
+
+helm init --service-account tiller
+
+kubectl get deployment -n kube-system | grep -i tiller
+
+kubectl get pods -n kube-system | grep -i tiller
